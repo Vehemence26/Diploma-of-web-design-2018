@@ -1,0 +1,36 @@
+//-----Layout Desktop-----//
+.stretch {
+	height:100vh;
+}
+.mainbg {
+	background-image: $image_main_large;
+	@include center_background;
+	height: 100vh;
+	min-height: 350px;
+}
+.aside {
+	height: 100vh;
+}
+
+.asidetop {
+	color: $text_color_secondary;
+	background-image: $image_asidetop_large; 
+	@include center_background;
+	padding:2rem 1rem 0 0;
+}
+.asidebottom {
+	color: $text_color_secondary;
+	background-image: $image_asidebottom_large;
+	@include center_background;
+	padding: 2em 1em 2em 1em;
+}
+.nav1 {
+	background-color: $primary_color; 
+	z-index: 1030; 
+	position: absolute;
+	
+		li {
+		line-height: .2em; 
+		 }
+}
+.maincontent, .topnav { background-color: $primary_color;}

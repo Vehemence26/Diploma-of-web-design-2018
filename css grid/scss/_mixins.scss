@@ -1,0 +1,14 @@
+//-----Mixins-----//
+@mixin clear {
+	margin: 0;
+	padding: 0;
+}
+@mixin center_background {
+	background-position: center;
+	text-align: center; 
+	background-size: cover;
+}
+@mixin fullscreen {
+	width:100vw;
+	height: 100vh;
+}

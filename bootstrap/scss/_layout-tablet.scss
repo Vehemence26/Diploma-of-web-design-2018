@@ -1,0 +1,14 @@
+//-----Tablet Layout-----//
+@media only screen and (max-width: 768px) {
+
+	.mainbg {
+		background-image: $image_main_medium;
+	}
+	.asidetop {
+		background-image: $image_asidetop_medium; 
+	}
+	.asidebottom {
+		background-image: $image_asidebottom_medium;
+	}
+}
+

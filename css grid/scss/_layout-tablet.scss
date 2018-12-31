@@ -1,0 +1,34 @@
+//-----Tablet Layout-----//
+@media only screen and (max-width: 768px) {
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(2, 50%);
+		grid-template-rows: 400px auto;
+		grid-template-areas: 
+		"main main"
+		"asidetop asidebottom";
+		grid-gap: $size_medium;
+	}
+	.main {
+		background-image: $image_main_medium;
+	}
+	.asidetop {
+		background-image: $image_asidetop_medium; 
+	}
+	.asidebottom {
+		background-image: $image_asidebottom_medium;
+	}
+	.topnav {
+		margin-top: 20px;
+		margin-left: 20px;
+		height: 170px; 
+		width: 170px;
+
+		font-size: 12px;
+
+	}
+
+//----Layout PAGE 2-----//
+//@import '_layout-tablet-2.scss'
+}
+

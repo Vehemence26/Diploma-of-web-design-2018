@@ -1,0 +1,37 @@
+//-----Mobile Layout-----//
+@media only screen and (max-width: 375px) {
+	.grid {
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: 200px 200px repeat(2,auto);
+		grid-template-areas: 
+		"topnav"
+		"main"
+		"asidetop"
+		"asidebottom";
+		grid-gap: $size_small;
+	}
+	.main {
+		background-image: $image_main_small;
+	}
+	.asidetop {
+		background-image: $image_asidetop_small; 
+		padding: size_small;
+	}
+	.asidebottom {
+		background-image: $image_asidebottom_small;
+		padding: $size_small;
+	}
+	.topnav {
+		width: 100%;
+		margin-top: 0;
+		margin-left: 0;
+
+		position: static;
+		z-index: 1;
+		font-size: 12px;
+	}
+
+//---layout PAGE 2----//
+//@import '_layout-mobile-2.scss';
+}

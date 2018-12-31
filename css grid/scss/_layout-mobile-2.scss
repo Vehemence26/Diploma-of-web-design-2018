@@ -1,0 +1,17 @@
+//----Layout Page 2---//
+.grid2 {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 250px auto 20px;
+	grid-template-areas: 
+	"topnav"
+	"main"
+	"subnav";
+	grid-gap: $size_small;
+	margin: $size_medium;
+}
+.subnav {
+	grid-area: subnav;
+	text-align: center;
+	padding-top: $size_xlarge;
+}

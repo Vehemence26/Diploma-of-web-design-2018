@@ -1,0 +1,94 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #404040;
+  font-family: "Roboto Slab", Bookman, serif; }
+
+h1, h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+a {
+  color: #000; }
+
+h3 {
+  font-size: 1em;
+  font-weight: lighter;
+  text-transform: uppercase; }
+
+.stretch {
+  height: 100vh; }
+
+.mainbg {
+  background-image: url("../img/green-mountains-pc.jpg");
+  background-position: center;
+  text-align: center;
+  background-size: cover;
+  height: 100vh;
+  min-height: 350px; }
+
+.aside {
+  height: 100vh; }
+
+.asidetop {
+  color: #fff;
+  background-image: url("../img/autumn-mountains-pc.jpg");
+  background-position: center;
+  text-align: center;
+  background-size: cover;
+  padding: 2rem 1rem 0 0; }
+
+.asidebottom {
+  color: #fff;
+  background-image: url("../img/mountains-clouds-pc.jpg");
+  background-position: center;
+  text-align: center;
+  background-size: cover;
+  padding: 2em 1em 2em 1em; }
+
+.nav1 {
+  background-color: #fff;
+  z-index: 1030;
+  position: absolute; }
+  .nav1 li {
+    line-height: .2em; }
+
+.maincontent, .topnav {
+  background-color: #fff; }
+
+@media only screen and (max-width: 768px) {
+  .mainbg {
+    background-image: url("../img/green-mountains-tablet.jpg"); }
+
+  .asidetop {
+    background-image: url("../img/autumn-mountains-tablet.jpg"); }
+
+  .asidebottom {
+    background-image: url("../img/mountains-clouds-tablet.jpg"); } }
+@media only screen and (max-width: 375px) {
+  .mainbg {
+    background-image: url("../img/green-mountains-phone.jpg"); }
+
+  .asidetop {
+    background-image: url("../img/autumn-mountains-phone.jpeg");
+    padding: size_small; }
+
+  .asidebottom {
+    background-image: url("../img/mountains-clouds-phone.jpg");
+    padding: 0.5em; } }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,15 @@
+//-----Mobile Layout-----//
+@media only screen and (max-width: 375px) {
+
+	.mainbg {
+		background-image: $image_main_small;
+	}
+	.asidetop {
+		background-image: $image_asidetop_small; 
+		padding: size_small;
+	}
+	.asidebottom {
+		background-image: $image_asidebottom_small;
+		padding: $size_small;
+	}
+}

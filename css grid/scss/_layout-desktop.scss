@@ -1,0 +1,49 @@
+//-----Layout-----//
+.grid {
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-areas: 
+	"main asidetop"
+	"main asidebottom";
+	grid-gap: $size_large;
+	@include fullscreen;
+}
+
+.main {
+	grid-area: main;
+	background-image: $image_main_large;
+	@include center_background;
+}
+
+.asidetop {
+	grid-area: asidetop;
+	background-image: $image_asidetop_large; 
+	@include center_background;
+	padding:2rem 1rem 0 0;
+}
+.asidebottom {
+	grid-area: asidebottom;
+	background-image: $image_asidebottom_large;
+	@include center_background;
+	padding: 2em 1em 2em 1em;
+}
+.topnav {
+	grid-area: topnav;
+
+	width: 220px;
+	height: 220px;
+	margin-top: 50px;
+	margin-left: 50px;
+	padding: $size_medium;
+
+	background-color: $primary_color;
+
+	position: fixed;
+	z-index: 3;
+
+	text-align: left;
+}
+
+//-----Layout PAGE 2-----//
+@import '_layout-desktop-2.scss'

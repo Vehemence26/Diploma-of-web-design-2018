@@ -1,0 +1,17 @@
+body {
+  background-color: $neutral_color;
+  font-family: $mainfont;
+}
+h1, h2,{ 
+	font-size: $size_large;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+a {
+	color: $text_color_main;
+}
+h3 {
+	font-size: $size_medium;
+	font-weight: lighter;
+	text-transform: uppercase;
+}

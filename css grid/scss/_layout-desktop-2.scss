@@ -1,0 +1,34 @@
+//-----layout page 2-----//
+.grid2 {
+	display: grid;
+	
+	grid-template-columns: minmax(220px, 250px)  1fr;
+	grid-template-rows: repeat(2, 250px);
+
+	grid-template-areas: 
+	"topnav main main"
+	"subnav main main";
+
+	grid-gap: $size_medium;
+	margin: $size_xlarge;
+}
+.topnav2, .content {
+	background-color: $primary_color;
+}
+.content {
+	grid-area: main;
+	padding: $size_xlarge;
+
+	p, h2 {
+		color: $text_color_main;
+	}
+
+}
+.subnav {
+	grid-area: subnav;
+	text-align: right;
+}
+.topnav {
+	grid-area: topnav;
+	padding: $size_large; 
+}
